@@ -1,8 +1,8 @@
 # Runforge for Blender
 
-**AI 3D asset generation inside Blender powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished model directly into your scene.
+**AI 3D asset generation inside Blender, powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished fully textured model directly into your Blender workspace.
 
-Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. Blender 4.0+.
+Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. works on Blender 4.0+.
 
 <img width="1920" height="1080" alt="Screenshot 2026-06-26 152735" src="https://github.com/user-attachments/assets/c84d6ed1-6eee-4485-9974-f62e1bce8062" />
 
@@ -10,16 +10,14 @@ Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](
 
 ## What it does
 
-Runforge adds a sidebar panel to Blender's 3D Viewport (shortcut `N`). From there you can:
+Runforge adds a sidebar panel to Blender's 3D Viewport (keyboard shortcut `N`). From there you can:
 
 - Generate a textured 3D model from a text prompt
-- Reconstruct geometry from a single reference images
+- Reconstruct geometry from a single reference image
 - Watch generation progress with a live elapsed timer
-- Cancel mid-flight if you change your mind
 - Re-import or locate any previous generation from the History panel
 
 The model is downloaded, saved to your output folder, and imported at the world origin — selected and ready — without leaving Blender.
-
 
 
 ## Models
@@ -45,8 +43,8 @@ Your API key is stored in Blender's own preferences file (`userpref.blend`) and 
 
 ### Requirements
 
-- Blender 4.0 or later
 - A free [Runware account](https://runware.ai) & API key
+- Blender 4.0 or later
 
 ---
 
