@@ -1,6 +1,6 @@
 # Runforge for Blender
 
-**AI 3D generation inside Blender powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished model directly into your scene.
+**AI 3D asset generation inside Blender powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished model directly into your scene.
 
 Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. Blender 4.0+.
 
