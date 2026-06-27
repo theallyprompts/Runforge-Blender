@@ -2,6 +2,8 @@
 
 **AI 3D asset generation inside Blender, powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished fully textured model directly into your Blender workspace.
 
+Note: This is currently a "legacy" add-on for Blender and will be updated to the new extension format in a future version.
+
 Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. works on Blender 4.0+.
 
 <img width="1920" height="1080" alt="Screenshot 2026-06-26 152735" src="https://github.com/user-attachments/assets/c84d6ed1-6eee-4485-9974-f62e1bce8062" />
