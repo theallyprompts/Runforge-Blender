@@ -2,9 +2,7 @@
 
 **AI 3D asset generation inside Blender, powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished fully textured model directly into your Blender workspace.
 
-Note: This is currently a "legacy" add-on for Blender and will be updated to the new extension format in a future version.
-
-Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. works on Blender 4.0+.
+Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. Blender 4.2+.
 
 <img width="1920" height="1080" alt="Screenshot 2026-06-26 152735" src="https://github.com/user-attachments/assets/c84d6ed1-6eee-4485-9974-f62e1bce8062" />
 
@@ -34,19 +32,16 @@ The model is downloaded, saved to your output folder, and imported at the world 
 ## Installation
 
 1. Go to the [Releases](../../releases) page and download the latest `runforge-x.x.x.zip`
-2. In Blender: **Edit → Preferences → Add-ons → Install from Disk...**
-   <img width="934" height="229" alt="Screenshot 2026-06-26 151206" src="https://github.com/user-attachments/assets/55ed6b02-8d77-44d9-97b9-77fa9b3ee13d" />
-4. Select the downloaded zip — do not unzip it first
-5. Enable **Runware 3D** in the add-ons list
-   <img width="914" height="578" alt="Screenshot 2026-06-26 151326" src="https://github.com/user-attachments/assets/6986aeaf-74be-4a36-97c1-9c964bd0e3dc" />
-7. Enter your Runware API key in the add-on preferences
+2. In Blender: **Edit → Preferences → Extensions → Install from Disk...**
+3. Select the downloaded zip — do not unzip it first
+4. Enter your Runware API key in the extension preferences
 
 Your API key is stored in Blender's own preferences file (`userpref.blend`) and persists across sessions.
 
 ### Requirements
 
+- Blender 4.2 or later
 - A free [Runware account](https://runware.ai) & API key
-- Blender 4.0 or later
 
 ---
 
@@ -161,4 +156,4 @@ Bug reports and pull requests are welcome. Please open an issue before starting 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+GPL-3.0-or-later — see [LICENSE](LICENSE).

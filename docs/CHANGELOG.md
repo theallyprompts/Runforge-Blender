@@ -4,6 +4,15 @@ All notable changes to Runforge are documented here.
 
 ---
 
+## [1.0.0] — 2026-06-29
+
+### Changed
+
+- **Converted to Blender Extension format** — Runforge is now a native Blender Extension (requires Blender 4.2+). It installs via Extensions rather than Legacy Add-ons, and includes a `blender_manifest.toml` declaring network and file permissions. The `bl_info` dict has been removed.
+- **Minimum Blender version raised to 4.2** — required for extension support.
+
+---
+
 ## [0.1.3] — 2026-06-26
 
 ### Added

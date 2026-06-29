@@ -1,0 +1,18 @@
+schema_version = "1.0.0"
+
+id = "runware_3d"
+version = "1.0.0"
+name = "Runware 3D"
+tagline = "Generate 3D models via Runware API"
+maintainer = "Runware <support@runware.ai>"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+category = "Import-Export"
+website = "https://runware.ai"
+
+[permissions]
+network = "Communicate with Runware API for 3D model generation"
+files = "Read and write model files and generation history to disk"
