@@ -2,7 +2,7 @@
 
 **AI 3D generation inside Blender.** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished model directly into your scene.
 
-Supports **Tripo v3.1** and **Meshy-6**. No external Python dependencies. Blender 4.0+.
+Supports **Tripo v3.1** and **Meshy-6**. No external Python dependencies. Blender 4.2+.
 
 ---
 
@@ -32,16 +32,15 @@ The model is downloaded, saved to your output folder, and imported at the world 
 ## Installation
 
 1. Go to the [Releases](../../releases) page and download the latest `runforge-x.x.x.zip`
-2. In Blender: **Edit → Preferences → Add-ons → Install from Disk...**
+2. In Blender: **Edit → Preferences → Get Extensions → Install from Disk...**
 3. Select the downloaded zip — do not unzip it first
-4. Enable **Runware 3D** in the add-ons list
-5. Enter your Runware API key in the add-on preferences
+4. Enter your Runware API key in the extension preferences
 
 Your API key is stored in Blender's own preferences file (`userpref.blend`) and persists across sessions.
 
 ### Requirements
 
-- Blender 4.0 or later
+- Blender 4.2 or later
 - A [Runware account](https://runware.ai) with API access
 
 ---
@@ -158,4 +157,4 @@ Bug reports and pull requests are welcome. Please open an issue before starting 
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+GPL-3.0-or-later — see [LICENSE](LICENSE).
