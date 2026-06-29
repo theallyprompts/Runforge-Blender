@@ -1,24 +1,24 @@
 # Runforge for Blender
 
-**AI 3D generation inside Blender.** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished model directly into your scene.
+**AI 3D asset generation inside Blender, powered by [Runware.ai](https://runware.ai/)** Type a prompt or drop in a reference image — Runforge calls the Runware.ai API and imports the finished fully textured model directly into your Blender workspace.
 
-Supports **Tripo v3.1** and **Meshy-6**. No external Python dependencies. Blender 4.2+.
+Supports **[Tripo v3.1](https://runware.ai/models/tripo-v3-1)** and **[Meshy-6](https://runware.ai/models/meshy-6)**. No external Python dependencies. Blender 4.2+.
+
+<img width="1920" height="1080" alt="Screenshot 2026-06-26 152735" src="https://github.com/user-attachments/assets/c84d6ed1-6eee-4485-9974-f62e1bce8062" />
 
 ---
 
 ## What it does
 
-Runforge adds a sidebar panel to Blender's 3D Viewport (shortcut `N`). From there you can:
+Runforge adds a sidebar panel to Blender's 3D Viewport (keyboard shortcut `N`). From there you can:
 
 - Generate a textured 3D model from a text prompt
-- Reconstruct geometry from one or more reference images
+- Reconstruct geometry from a single reference image
 - Watch generation progress with a live elapsed timer
-- Cancel mid-flight if you change your mind
 - Re-import or locate any previous generation from the History panel
 
 The model is downloaded, saved to your output folder, and imported at the world origin — selected and ready — without leaving Blender.
 
----
 
 ## Models
 
@@ -32,7 +32,7 @@ The model is downloaded, saved to your output folder, and imported at the world 
 ## Installation
 
 1. Go to the [Releases](../../releases) page and download the latest `runforge-x.x.x.zip`
-2. In Blender: **Edit → Preferences → Get Extensions → Install from Disk...**
+2. In Blender: **Edit → Preferences → Extensions → Install from Disk...**
 3. Select the downloaded zip — do not unzip it first
 4. Enter your Runware API key in the extension preferences
 
@@ -41,7 +41,7 @@ Your API key is stored in Blender's own preferences file (`userpref.blend`) and 
 ### Requirements
 
 - Blender 4.2 or later
-- A [Runware account](https://runware.ai) with API access
+- A free [Runware account](https://runware.ai) & API key
 
 ---
 
@@ -130,18 +130,17 @@ Costs are shown in the panel after each generation. The exact amount depends on 
 
 ## Limitations
 
-- **One generation at a time** — queue or parallel generation is not supported
+- **One generation at a time** — queue or parallel generation is not yet supported
+- **Single Reference Image** — multiple reference images for Image to 3D is not yet supported
 - **Polling only** — status is checked every 3 seconds; there are no push callbacks
 - **10-minute timeout** — if the API hasn't responded in 10 minutes, the job is surfaced as timed out (it may still complete on the Runware side)
-- **Image size limit** — reference images must be under 20 MB
-- **Tripo requires the FBX importer** — Tripo always outputs FBX
+- **Reference image size limit** — reference images must be under 20 MB
 - **No viewport render shortcut** — Image-to-3D from a Blender render requires saving the render to disk first
+- **Model Availability** - Meshy-6 and Tripo V3.1 are available in this version. I will expand to cover all of [Runware's 3D Models](https://runware.ai/collections/best-3d-models) in a later version.
 
 ---
 
 ## Known issues
-
-These are confirmed issues on the Runware API side, not in the addon code. They are tracked and will be resolved when the upstream API is updated.
 
 - **Meshy-6 Pose (A-Pose / T-Pose) has no effect** — the parameter is accepted but the output ignores it.
 - **Meshy-6 Texture Prompt has no effect** — the parameter is accepted but does not influence texturing.
